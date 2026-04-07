@@ -659,6 +659,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONNECTOR */}
+      <section id="connector" className="py-24 px-6 bg-surface">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-forest mb-4">
+            Get the PolicyApp connector
+          </h2>
+          <p className="text-muted text-lg mb-8 max-w-xl mx-auto">
+            Add the SolvingHealth connector to Claude and get instant access to document management, policy tracking, and care planning tools.
+          </p>
+          <div className="bg-white rounded-2xl border border-muted-light/40 p-6 text-left max-w-lg mx-auto mb-8">
+            <p className="text-xs font-medium text-muted-light uppercase tracking-wider mb-3">Claude Desktop MCP Config</p>
+            <pre className="text-sm text-foreground overflow-x-auto whitespace-pre font-mono leading-relaxed">{`"policyapp": {
+  "command": "npx",
+  "args": ["-y", "@anthropic-ai/mcp-remote",
+    "https://solvinghealth.com/mcp"]
+}`}</pre>
+          </div>
+          <p className="text-muted text-sm">
+            Don&apos;t have Claude? Get it free at{" "}
+            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" className="text-forest font-medium hover:underline">claude.ai</a>
+            {" "}or use the chat and voice widgets on this page.
+          </p>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="py-12 px-6 border-t border-surface">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
