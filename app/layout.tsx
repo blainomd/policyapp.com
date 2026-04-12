@@ -31,8 +31,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         {children}
-        <Script src="https://solvinghealth.com/chat-widget.js" data-channel="policyapp" data-color="#1B2A4A" strategy="lazyOnload" />
         <Script src="https://solvinghealth.com/voice-embed.js" data-site="policyapp" strategy="lazyOnload" />
+          <Script src="https://harnesshealth.ai/harness.js" strategy="lazyOnload" />
       </body>
     </html>
   );
