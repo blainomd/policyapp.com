@@ -686,13 +686,21 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="py-12 px-6 border-t border-surface">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="text-lg font-semibold tracking-tight text-forest">
-            policyapp
-          </span>
-          <p className="text-sm text-muted">
-            Your documents. Always current. Always accessible.
-          </p>
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <div className="text-lg font-semibold tracking-tight text-forest">
+              policyapp
+            </div>
+            <p className="text-sm text-muted mt-1">
+              Your documents. Always current. Always accessible.
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted">
+            <a href="https://co-op.care" className="hover:text-forest transition-colors">co-op.care</a>
+            <a href="https://solvinghealth.com" className="hover:text-forest transition-colors">SolvingHealth</a>
+            <span className="hidden md:inline text-muted-light">|</span>
+            <span>&copy; 2026 policyapp. A <a href="https://solvinghealth.com" className="hover:text-forest transition-colors">SolvingHealth</a> product.</span>
+          </div>
         </div>
       </footer>
     </div>
